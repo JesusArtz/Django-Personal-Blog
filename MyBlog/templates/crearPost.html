@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear/Editar Post</title>
+    </head>
+    <body>
+        <h1>Crear o Editar Post</h1>
+        <form method="POST">
+            {% csrf_token %}
+    
+            {{form.as_p}}
+            <button type="submit"> Crear/Editar Post </button>
+        </form>
+    </body>
+</html>
